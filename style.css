@@ -1,21 +1,62 @@
 body{
-    background-color: rgb(65, 65, 126);
+
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(89, 89, 201);
+    font-family: 'Times New Roman', Times, serif;
 }
-.message{
-    margin-top: 100px;
-    display: none;
+
+.form-container{
+    background-color: white;
+    padding: 20px;
+    box-shadow: black;
     border-radius: 5px;
+}
+
+
+.form-container input {
+    display: block;
+    margin-bottom: 10px;
     padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+
+
 }
-.message.error{
-    background-color: red;
+
+.form-container button {
+    padding: 10px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
 }
+
+
+/*estilização das mensagens de resultado */
+
+.message{
+    padding: 10px;
+
+}
+
+
 .message.success{
-    background-color: green;
+    background-color: white;
+    color: green ;
+
+    justify-self: center;
+}
+
+
+.message.error{
+    background-color: white;
+    color: red;
+    justify-self: center;
 }
